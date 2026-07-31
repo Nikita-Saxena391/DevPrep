@@ -161,9 +161,36 @@ npm install
 Create `.env.local`:
 
 ```env
-DATABASE_URL=
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+# Database
+DATABASE_URL="your_neon_database_url"
+
+# Better Auth
+BETTER_AUTH_SECRET="your_random_secret"
+BETTER_AUTH_URL="http://localhost:3000"
+
+# Application URL
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+
+# Google OAuth
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+# Judge0 API
+JUDGE0_API_URL="your_judge0_api_url"
+JUDGE0_API_HOST="your_judge0_api_host"
+JUDGE0_API_KEY="your_judge0_api_key"
+
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
+CLERK_SECRET_KEY="your_clerk_secret_key"
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="/"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="/"
+
+# Groq AI
+GROQ_API_KEY="your_groq_api_key"
 ```
 
 ### Run Prisma
